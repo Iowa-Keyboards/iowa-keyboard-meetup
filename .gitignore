@@ -1,0 +1,7 @@
+.cache
+.DS_Store
+.env
+_site
+node_modules
+public
+config.json

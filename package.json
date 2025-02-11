@@ -1,0 +1,17 @@
+{
+  "name": "iowa-keyboard-meetup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/eleventy --serve --quiet",
+    "build": "./node_modules/.bin/eleventy",
+    "clear": "rm -rf _site"
+  }
+}
