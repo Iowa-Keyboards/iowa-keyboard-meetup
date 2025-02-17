@@ -11,10 +11,6 @@ permalink: index.html
 {% set pastEvents = "false" %}
 {%- for event in events | sort(true, true, 'date') %}
   {%- if event.date | inFuture %}
-    <h4>{{ event.date | formattedDate }} at {{ event.location.name }}</h4>  
-    <p>{{ event.location.address }}</p>
-    {% if event.ticketLink %}
-      <p><a href="{{ event.ticketLink }}">Get tickets here</a></p>
-    {% endif %}
+    {% include "event.njk" %}
   {%- endif %}
 {%- endfor %}
