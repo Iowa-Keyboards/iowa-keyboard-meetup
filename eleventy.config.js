@@ -1,4 +1,5 @@
 const plugins = require('./config/plugins')
+const dateFilters = require('./config/filters/date')
 
 module.exports = function (eleventyConfig) {
   const markdownIt = require("markdown-it")
@@ -32,6 +33,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy(path, {
       filter: path => !path.endsWith('.scss') && !path.startsWith('_')
     })
+  })
+
+  // Filters
+  Object.keys(dateFilters).forEach(filterName => {
+    eleventyConfig.addFilter(filterName, dateFilters[filterName])
   })
 
   // Plugins

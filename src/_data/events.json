@@ -1,0 +1,35 @@
+[
+  {
+    "date": "3/4/2023",
+    "time": "2-5pm",
+    "location": {
+      "name": "Fox Brewing",
+      "address": "103 S. 11th Street, West Des Moines, IA 50265",
+      "link": "https://www.foxbrewco.com"
+    },
+    "ticketLink": "",
+    "photos": false
+  },
+  {
+    "date": "4/6/2024",
+    "time": "1-5pm",
+    "location": {
+      "name": "Confluence Brewing",
+      "address": "1235 Thomas Beck Rd, Des Moines, IA 50315",
+      "link": "https://www.confluencebrewing.com"
+    },
+    "ticketLink": "",
+    "photos": true
+  },
+  {
+    "date": "5/3/2025",
+    "time": "1-4pm",
+    "location": {
+      "name": "Confluence Brewing",
+      "address": "1235 Thomas Beck Rd, Des Moines, IA 50315",
+      "link": "https://www.confluencebrewing.com"
+    },
+    "ticketLink": "https://www.tickettailor.com/events/iowakeyboardmeetups/1565448",
+    "photos": false
+  }
+]
