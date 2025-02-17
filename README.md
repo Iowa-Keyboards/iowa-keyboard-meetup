@@ -4,6 +4,12 @@
 
 Welcome to the repo for [IowaKeyboards.com](https://iowakeyboards.com).
 
+## Adding or Updating Events
+
+- Add any new event to `src/_data/events.json`.
+- Some content will display dynamically based on presence.
+- Any past event photos should be stored in `assets/images/<M-D-YYYY>/`, then set the event's `photos` attribute to `true`
+
 ## Developing Locally
 
 - Download this repo
