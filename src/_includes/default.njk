@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include 'head.njk' %}
+  <body>
+    {% include 'navbar.njk' %}
+    <div id="main" role="main" class="container-fluid mt-3 mb-3">
+      {{ content | safe }}
+    </div>
+  </body>
+
+  {% include 'footer.njk' %}
+  {% include 'js.njk' %}
+</html>

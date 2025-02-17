@@ -1,0 +1,35 @@
+.catalog {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  display: flex;
+
+  img {
+    border-radius: 0;
+    margin-bottom: 1rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--sans-serif);
+    margin-bottom: 0 !important;
+  }
+}
+
+.catalog-years {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  text-align: center;;
+  margin-bottom: 1rem;
+}
+
+.catalog-year {
+  padding: 0.5rem;
+  border: 3px solid var(--cyan);
+  border-radius: 15px;
+  background-color: var(--grey);
+
+  h2 {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,32 @@
+:root {
+  // Colors
+  --black: #282a36; // 40, 42, 54
+  --pure-black: #000000; // 0, 0, 0
+  --grey: #44475a; // 68, 71, 90
+  --light-grey: #6272a4; // 98, 114, 164
+  --white: #d0d0d0; // 208, 208, 208
+  --pure-white: #ffffff; // 255, 255, 255
+  --red: #ff5555; // 255, 85, 85
+  --orange: #ffb86c; // 255, 184, 108
+  --yellow: #f1fa8c; // 241, 250, 140
+  --green: #50fa7b; // 80, 250, 123
+  --cyan: #8be9fd; // 139, 233, 253
+  --purple: #bd93f9; // 189, 147, 249
+  --pink: #ff79c6; // 255, 121, 198
+
+  // Fonts
+  --serif: Georgia, serif;
+  --sans-serif: -apple-system, system-ui, sans-serif;
+  --headers: 'Orbitron', sans-serif;
+  --code: 'Hack','Courier', monospace;
+
+  // Bootstrap Specific
+  --bs-primary-rgb: var(--light-grey);
+  --bs-link-color: var(--orange);
+  --bs-link-color-rgb: var(--orange);
+  --bs-link-hover-color: var(--green);
+  --bs-link-hover-color-rgb: var(--green);
+  --bs-body-color: var(--white);
+  --bs-code-color: var(--cyan);
+  --bs-font-sans-serif: var(--sans-serif);
+}

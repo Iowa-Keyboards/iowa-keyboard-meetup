@@ -1,0 +1,10 @@
+.page {
+  padding-bottom: 3rem;
+
+  h3 {
+    padding: .5rem 0;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, var(--pink), var(--purple));
+    border-image-slice: 1;
+  }
+}

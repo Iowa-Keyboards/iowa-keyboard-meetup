@@ -1,0 +1,115 @@
+.post {
+  padding-bottom: 3rem;
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  
+    a {
+      background-image: linear-gradient(to right, var(--pink), var(--purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: var(--pink);
+      transition: all ease 0.3s;
+      
+      &:hover {
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, var(--pink), var(--purple));
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
+  }
+
+  &:not(.single-post)::after {
+    position: relative;
+    left: -10%;
+    content: " ";
+    display: block;
+    height: 3rem;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, var(--pink), var(--purple));
+    border-image-slice: 1;
+    width: 120%;
+    max-width: 100vw;
+  }
+
+  .back {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .notice {
+    background-color: var(--grey);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 4px 4px darken(#282a36, 5%);
+    font-size: .8rem;
+  }
+
+  &.single-post {
+    .date {
+      margin-bottom: 1rem;
+    }
+  }
+
+  table {
+    margin: 0 auto 1rem;
+    border: 5px solid var(--light-grey);
+
+    th {
+      background-color: var(--grey);
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid var(--light-grey);
+    }
+  }
+}
+
+.date,
+.post-date {
+  color: var(--light-grey);
+  font-size: 0.9rem;
+  font-family: var(--sans-serif);
+  font-weight: 400;
+}
+
+.post-date {
+  float: right;
+}
+
+.blog {
+  .epg__year {
+    font-size: 2.5rem;
+    color: var(--green);
+    font-family: var(--headers);
+  }
+
+  .blog-post {
+    .post-title {
+      margin-bottom: 0;
+
+      a {
+        background-image: linear-gradient(to right, var(--pink) 0%, var(--purple) 75%, var(--purple) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: var(--pink);
+        transition: all ease 0.3s;
+        text-decoration: none;
+        
+        &:hover {
+          -webkit-text-fill-color: transparent;
+          background-image: linear-gradient(to right, var(--pink) 0%, var(--purple) 75%, var(--purple) 100%);
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+      }
+    }
+    
+    .post-excerpt {
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--light-grey);
+
+  a {
+    color: var(--light-grey);
+  }
+
+  .bottom-border {
+    height: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--cyan);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+  }
+}
