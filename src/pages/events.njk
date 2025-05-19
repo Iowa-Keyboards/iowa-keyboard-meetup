@@ -5,14 +5,17 @@ permalink: events.html
 
 <h2>Upcoming Events</h2>
 
-{% set pastEvents = "false" %}
+{%- for event in events | sort(true, true, 'date') %}
+  {% if event.date | inFuture %}
+    {% include "event.njk" %}
+  {% endif %}
+{%- endfor %}
+
+<hr />
+<h2>Past Events</h2>
+
 {%- for event in events | sort(true, true, 'date') %}
   {% if event.date | inPast %}
-    {% if pastEvents == "false" %}
-      {% set pastEvents = "true" %}
-      <hr />
-      <h2>Past Events</h2>
-    {% endif %}
+    {% include "event.njk" %}
   {% endif %}
-  {% include "event.njk" %}
 {%- endfor %}

@@ -10,7 +10,15 @@
   {% endif %}
   {% if event.date | inPast %}
     {% if event.photos %}
-      <li>Check out photos here!</li>
+      {% set counting = 0 %}
+      {%- for link in event.photosLinks %}
+        {% set counting = counting + 1 %}
+        <li><a href="{{link.link}}" target="_blank">Photos {{counting}}
+          {% if link.text %}
+            - {{link.text}}
+          {% endif %}
+        </a></li>
+      {%- endfor %}
     {% endif %}
   {% endif %}
 </ul>
