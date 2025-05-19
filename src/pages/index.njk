@@ -10,6 +10,7 @@ permalink: index.html
 {% set anyUpcoming = "false" %}
 {%- for event in events | sort(true, true, 'date') %}
   {%- if event.date | inFuture %}
+  {# {%- if event.date  %} #}
     {% if anyUpcoming == "false" %}
       {% set anyUpcoming = "true" %}
       <h2>Upcoming Events</h2>
