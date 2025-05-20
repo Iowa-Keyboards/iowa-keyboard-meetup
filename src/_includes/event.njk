@@ -1,24 +1,31 @@
-<h4>{{ event.date | formattedDate }}</h4>
-<ul>
-  {% if event.date | inFuture %}
+
+{% if event.date | inFuture %}
+<div class="future-event-card">
+  <h4>{{ event.date | formattedDate }}</h4>
+  <ul>
     <li>Location: <a href="{{ event.location.link }}">{{ event.location.name }}</a></li>
     <li>Address: <a href="#">{{ event.location.address }}</a></li>
     <li>Time: {{ event.time }}</li>
     {% if event.ticketLink %}
       <li><a href="{{ event.ticketLink }}">Get tickets here</a></li>
     {% endif %}
-  {% endif %}
-  {% if event.date | inPast %}
-    {% if event.photos %}
-      {% set counting = 0 %}
-      {%- for link in event.photosLinks %}
-        {% set counting = counting + 1 %}
-        <li><a href="{{link.link}}" target="_blank">Photos {{counting}}
-          {% if link.text %}
-            - {{link.text}}
-          {% endif %}
-        </a></li>
-      {%- endfor %}
-    {% endif %}
-  {% endif %}
-</ul>
+  </ul>
+</div>
+{% endif %}
+{% if event.date | inPast %}
+<a href="{{event.eventLink}}" class="past-event-card">
+  <h4>{{ event.date | formattedDate }}</h4>
+  <img src="{{event.headerPhoto}}">
+  {# {% if event.photos %}
+    {% set counting = 0 %}
+    {%- for link in event.photosLinks %}
+      {% set counting = counting + 1 %}
+      <li><a href="{{link.link}}" target="_blank">Photos {{counting}}
+        {% if link.text %}
+          - {{link.text}}
+        {% endif %}
+      </a></li>
+    {%- endfor %}
+  {% endif %} #}
+</a>
+{% endif %}

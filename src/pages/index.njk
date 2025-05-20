@@ -5,12 +5,12 @@ homepage: true
 permalink: index.html
 ---
 
-<p>Iowa Keyboards is currently in development - please check back later!</p>
+<div class="main-content">
+<img src="assets/img/iowaKeyboardMeetups.png" class="main-iowa-image">
 
 {% set anyUpcoming = "false" %}
 {%- for event in events | sort(true, true, 'date') %}
   {%- if event.date | inFuture %}
-  {# {%- if event.date  %} #}
     {% if anyUpcoming == "false" %}
       {% set anyUpcoming = "true" %}
       <h2>Upcoming Events</h2>
@@ -18,3 +18,21 @@ permalink: index.html
     {% include "event.njk" %}
   {%- endif %}
 {%- endfor %}
+<h2>Stay in the Loop</h2>
+<p>Join our <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScnxIebQXu4uMBzT1WOuQWKcOle3EV3_h3ew0d9Ws6qytxQgA/viewform?usp=dialog">mailing list</a> to get notified of all upcoming events and details. Events typically happen in the Spring.</p>
+{# {% if anyUpcoming == "false" %}
+<h2>Next Event: Spring</h2>
+<p>We don't have specific event details planned but meetups typically happen in the Spring. </p>
+<p>Join the <a href="">mailing list</a> to stay in the loop.</p>
+{% endif %} #}
+
+
+<h2>Past Events</h2>
+
+{%- for event in events | sort(true, true, 'date') %}
+  {% if event.date | inPast %}
+    {% include "event.njk" %}
+  {% endif %}
+{%- endfor %}
+
+</div>

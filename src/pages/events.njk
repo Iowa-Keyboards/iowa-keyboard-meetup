@@ -3,19 +3,25 @@ title: Events
 permalink: events.html
 ---
 
-<h2>Upcoming Events</h2>
-
-{%- for event in events | sort(true, true, 'date') %}
-  {% if event.date | inFuture %}
-    {% include "event.njk" %}
+<div class="events-page">
+  <h2>Upcoming Events</h2>
+  {% set anyUpcoming = "false" %}
+  {%- for event in events | sort(true, true, 'date') %}
+    {% if event.date | inFuture %}
+      {% set anyUpcoming = "true" %}
+      {% include "event.njk" %}
+    {% endif %}
+  {%- endfor %}
+  {% if anyUpcoming == "false" %}
+  <p>We don't have specific event details planned but meetups typically happen in the Spring. </p>
+  <p>Join the <a href="">mailing list</a> to stay in the loop.</p>
   {% endif %}
-{%- endfor %}
+  <hr />
+  <h2>Past Events</h2>
 
-<hr />
-<h2>Past Events</h2>
-
-{%- for event in events | sort(true, true, 'date') %}
-  {% if event.date | inPast %}
-    {% include "event.njk" %}
-  {% endif %}
-{%- endfor %}
+  {%- for event in events | sort(true, true, 'date') %}
+    {% if event.date | inPast %}
+      {% include "event.njk" %}
+    {% endif %}
+  {%- endfor %}
+</div>
