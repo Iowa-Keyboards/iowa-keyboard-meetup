@@ -9,4 +9,45 @@ h1 {
   font-size: 3rem;
 }
 
-// BODY //
+// EVENTS //
+.events-page {
+  
+}
+
+// EVENT //
+.past-event-card {
+  position: relative;
+  margin: 1rem 0;
+  display: block;
+  h4 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    // color: white;
+    background-color: var(--black);
+    padding: 5px;
+    padding-left: 0;
+  }
+  // --bs-aspect-ratio: 50%;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+
+  }
+}
+
+
+// INDEX ///
+.main-iowa-image {
+  width: 100%;
+  filter: brightness(0) invert(1);
+}
+
+.main-content {
+  p {
+    // font-size: 1.5rem;
+  }
+  // padding: 0 4rem;
+  margin: 0 auto;
+}
