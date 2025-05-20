@@ -8,13 +8,8 @@
       "link": ""
     },
     "ticketLink": "",
-    "photos": true,
-    "photosLinks": [
-      {"link": "https://www.flickr.com/photos/195286563@N03/sets/72177720297650609/with/51963929080/", "text": ""},
-      {"link": "https://imgur.com/a/VWF8vOd", "text": ""},
-      {"link": "https://imgur.com/a/PTuvL6o", "text": ""},
-      {"link": "https://imgur.com/a/24WzDy9", "text": ""}
-    ]
+    "eventLink": "/2022",
+    "headerPhoto": "/assets/img/2022-header.jpg"
   },
   {
     "date": "3-4-2023",
@@ -25,13 +20,8 @@
       "link": "https://www.foxbrewco.com"
     },
     "ticketLink": "",
-    "photos": true,
-    "photosLinks": [
-      {"link": "https://imgur.com/a/wJUm2OJ", "text": ""},
-      {"link": "https://imgur.com/a/w9tWZwU", "text": "Deadbolt"},
-      {"link": "https://imgur.com/a/x4K5cSy", "text": ""},
-      {"link": "https://imgur.com/a/LcNlXEf", "text": "Gameboy Camera"}
-    ]
+    "eventLink": "/2023",
+    "headerPhoto": "/assets/img/2023-header.jpg"
   },
   {
     "date": "4-6-2024",
@@ -42,12 +32,8 @@
       "link": "https://www.confluencebrewing.com"
     },
     "ticketLink": "",
-    "photos": true,
-    "photosLinks": [
-      {"link": "https://imgur.com/a/2Oj7YuP", "text": ""},
-      {"link": "https://imgur.com/a/iowa-meetup-2024-qfxZP38", "text": ""},
-      {"link": "https://imgur.com/a/rCRL8ZK", "text": "Gameboy Camera"}
-    ]
+    "eventLink": "/2024",
+    "headerPhoto": "/assets/img/2024-header.jpg"
   },
   {
     "date": "5-3-2025",
@@ -58,6 +44,7 @@
       "link": "https://www.confluencebrewing.com"
     },
     "ticketLink": "https://www.tickettailor.com/events/iowakeyboardmeetups/1565448",
-    "photos": false
+    "eventLink": "/2025",
+    "headerPhoto": "/assets/img/2025-header.jpg"
   }
 ]
