@@ -6,10 +6,13 @@
     <li>Location: <a href="{{ event.location.link }}">{{ event.location.name }}</a></li>
     <li>Address: <a href="#">{{ event.location.address }}</a></li>
     <li>Time: {{ event.time }}</li>
-    {% if event.ticketLink %}
-      <li><a href="{{ event.ticketLink }}">Get tickets here</a></li>
-    {% endif %}
+    
   </ul>
+  {% if event.ticketLink %}
+    <div class="future-event-card--buttons">
+      <a href="{{ event.ticketLink }}" target="_blank" class="btn btn-primary btn-tickets">BUY TICKETS</a>
+    </div>
+    {% endif %}
 </div>
 {% endif %}
 {% if event.date | inPast %}

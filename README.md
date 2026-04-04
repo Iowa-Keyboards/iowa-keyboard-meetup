@@ -15,6 +15,7 @@ Welcome to the repo for [IowaKeyboards.com](https://iowakeyboards.com).
 - Download this repo
 - Run `npm install` to load all dependencies
 - Run `npm run start` to start your local development server on `http://localhost:8080`
+- Run `node_modules/.bin/eleventy --serve --quiet` if you are Jack
 - To debug, run `DEBUG=Eleventy* npx eleventy`
 
 > [!NOTE]

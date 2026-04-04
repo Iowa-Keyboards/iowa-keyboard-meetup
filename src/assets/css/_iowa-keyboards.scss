@@ -37,6 +37,28 @@ h1 {
   }
 }
 
+.btn-tickets {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    color: var(--black);
+    border: none;
+    
+    &:hover {
+        background-color: var(--orange-dark);
+        color: var(--white);
+    }
+}
+
+.future-event-card--buttons {
+    display: flex;
+    justify-content: center;
+}
+
 
 // INDEX ///
 .main-iowa-image {
@@ -51,3 +73,4 @@ h1 {
   // padding: 0 4rem;
   margin: 0 auto;
 }
+
