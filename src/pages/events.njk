@@ -7,7 +7,7 @@ permalink: events.html
 <div class="events-page">
   <h2>Upcoming Events</h2>
   {% set anyUpcoming = "false" %}
-  {%- for event in events | sort(true, true, 'date') %}
+  {%- for event in events %}
     {% if event.date | inFuture %}
       {% set anyUpcoming = "true" %}
       {% include "event.njk" %}
@@ -20,7 +20,7 @@ permalink: events.html
   <hr />
   <h2>Past Events</h2>
 
-  {%- for event in events | sort(true, true, 'date') %}
+  {%- for event in events %}
     {% if event.date | inPast %}
       {% include "event.njk" %}
     {% endif %}

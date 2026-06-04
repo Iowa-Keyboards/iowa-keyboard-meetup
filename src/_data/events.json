@@ -1,39 +1,15 @@
 [
   {
-    "date": "3-26-2022",
-    "time": "2-5pm",
-    "location": {
-      "name": "The Garage",
-      "address": "My old Apartment",
-      "link": ""
-    },
-    "ticketLink": "",
-    "eventLink": "/2022",
-    "headerPhoto": "/assets/img/2022-header.jpg"
-  },
-  {
-    "date": "3-4-2023",
-    "time": "2-5pm",
-    "location": {
-      "name": "Fox Brewing",
-      "address": "103 S. 11th Street, West Des Moines, IA 50265",
-      "link": "https://www.foxbrewco.com"
-    },
-    "ticketLink": "",
-    "eventLink": "/2023",
-    "headerPhoto": "/assets/img/2023-header.jpg"
-  },
-  {
-    "date": "4-6-2024",
-    "time": "1-5pm",
+    "date": "5-2-2026",
+    "time": "1-4pm",
     "location": {
       "name": "Confluence Brewing",
       "address": "1235 Thomas Beck Rd, Des Moines, IA 50315",
       "link": "https://www.confluencebrewing.com"
     },
-    "ticketLink": "",
-    "eventLink": "/2024",
-    "headerPhoto": "/assets/img/2024-header.jpg"
+    "ticketLink": "https://www.tickettailor.com/events/iowakeyboardmeetups/2055185",
+    "eventLink": "/2026",
+    "headerPhoto": "/assets/img/2026-header.jpg"
   },
   {
     "date": "5-3-2025",
@@ -48,15 +24,39 @@
     "headerPhoto": "/assets/img/2025-header.jpg"
   },
   {
-    "date": "5-2-2026",
-    "time": "1-4pm",
+    "date": "4-6-2024",
+    "time": "1-5pm",
     "location": {
       "name": "Confluence Brewing",
       "address": "1235 Thomas Beck Rd, Des Moines, IA 50315",
       "link": "https://www.confluencebrewing.com"
     },
-    "ticketLink": "https://www.tickettailor.com/events/iowakeyboardmeetups/2055185",
-    "eventLink": "/2026",
-    "headerPhoto": "/assets/img/2026-header.jpg"
+    "ticketLink": "",
+    "eventLink": "/2024",
+    "headerPhoto": "/assets/img/2024-header.jpg"
+  },
+  {
+    "date": "3-4-2023",
+    "time": "2-5pm",
+    "location": {
+      "name": "Fox Brewing",
+      "address": "103 S. 11th Street, West Des Moines, IA 50265",
+      "link": "https://www.foxbrewco.com"
+    },
+    "ticketLink": "",
+    "eventLink": "/2023",
+    "headerPhoto": "/assets/img/2023-header.jpg"
+  },
+  {
+    "date": "3-26-2022",
+    "time": "2-5pm",
+    "location": {
+      "name": "The Garage",
+      "address": "My old Apartment",
+      "link": ""
+    },
+    "ticketLink": "",
+    "eventLink": "/2022",
+    "headerPhoto": "/assets/img/2022-header.jpg"
   }
 ]
